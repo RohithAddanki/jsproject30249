@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>demo25</title>
+        <script>
+            document.writeln('<b><p style="text-decoration: underline; text-align: center;">Demo on Arrow Function</p></b>')
+            //arrow function demo
+            let sum = (a,b) => a+b
+            document.writeln("Output="+sum(10,20)+"</br>")
+
+            const mul = (x,y) => {
+                let output=x*y
+                return output
+            }
+            document.writeln("Output="+mul(10,30)+"</br>")
+
+            const status = (n) => {
+                if(n%2==0)
+                return true
+                else
+                return false
+            }
+            let n=parseInt(prompt("Enter number: "))
+            if(status(n))
+            document.writeln(n+" is even")
+            else
+            document.writeln(n+" is odd")
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

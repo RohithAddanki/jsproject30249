@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>demo28</title>
+        <script>
+            document.writeln('<b><p style="text-decoration: underline; text-align: center;">Demo on map object - key value pair</p></b>')
+            //map object - key value pair
+            const demomap=new Map()
+            demomap.set("id",123,)
+            demomap.set("Name","klu")
+            demomap.set("Age",40.5)
+            demomap.set("Status",false)
+            demomap.set("Name","KLEF") //duplicate key - klu will be updated as KLEF
+            document.writeln("map size="+demomap.size+"</br>")
+            document.writeln("map type="+typeof demomap+"</br>")
+
+            document.writeln(demomap.get("id")+"</br>")
+            document.writeln(demomap.get("location")+"</br>")
+
+            document.writeln(demomap.has("id")+"</br>")
+            document.writeln(demomap.has("location")+"</br>")
+
+            document.writeln("Deletion : "+demomap.delete("Status")+"</br>")
+
+            document.writeln("Map Size="+demomap.size+"</br>")
+            document.writeln("<u>Display Map keys </u></br>")
+
+            for(let k of demomap.keys())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display Map values </u></br>")
+
+            for(let k of demomap.values())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display Map values based on keys</u></br>")
+
+            for(let k of demomap.keys())
+            {
+                document.writeln(demomap.get(k))
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display Map keys & values </u></br>")
+
+            for(const[k,v] of demomap.entries())
+            {
+                document.writeln(k+":"+v+"</br>")
+            }
+            document.writeln("</br>")
+
+            demomap.clear()
+            document.writeln("Map Size="+demomap.size+"</br>")
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
